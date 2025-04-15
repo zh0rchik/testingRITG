@@ -31,3 +31,9 @@ element iu необходим для использования готовых �
 vue create todo-list-app
 cd todo-app
 ```
+
+[json-server](https://code.tutsplus.com/ru/fake-rest-api-up-and-running-using-json-server--cms-27871t)
+Чтобы начать работу с `json-server` потребуется его установить через Менеджер пакетов Node (npm).
+```
+npm install -g json-server
+```
