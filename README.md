@@ -24,6 +24,7 @@
  - [vue2 (composition api)](https://vuejs.org/) + [element iu](https://element.eleme.io)
 element iu необходим для использования готовых компонентов, не требующих верстки с нуля.
 
+<hr>
 
 Инициализация проекта
 ```
