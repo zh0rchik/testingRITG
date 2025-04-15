@@ -54,5 +54,14 @@ POST/
 ![image](https://github.com/user-attachments/assets/e0a1fd79-4983-4ad9-854f-c059e4474d70)
 ![image](https://github.com/user-attachments/assets/8a35f56f-42b6-4370-b226-cb9a7a6f3730)
 
+DELETE/
+
+![image](https://github.com/user-attachments/assets/b48a20fd-417b-4435-ae13-695089536f24)
+
+PATCH/
+
+![image](https://github.com/user-attachments/assets/488110b7-f24d-4692-8e25-c6cb551e74ec)
+![image](https://github.com/user-attachments/assets/8f76e259-21b1-42ce-90d7-546e00813148)
+
 
 
