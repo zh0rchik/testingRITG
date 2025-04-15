@@ -38,3 +38,16 @@ cd todo-app
 ```
 npm install -g json-server
 ```
+
+### Тестирование точек входа REST API
+GET/ 
+
+![image](https://github.com/user-attachments/assets/af5d5267-19e6-4098-9be1-76e7e0f61385)
+
+POST/
+
+![image](https://github.com/user-attachments/assets/e0a1fd79-4983-4ad9-854f-c059e4474d70)
+![image](https://github.com/user-attachments/assets/8a35f56f-42b6-4370-b226-cb9a7a6f3730)
+
+
+
