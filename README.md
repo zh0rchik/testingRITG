@@ -39,6 +39,11 @@ cd todo-app
 npm install -g json-server
 ```
 
+Запускаем сервер через командную строку, указывая созданный в корне файл `info.json` в качестве источника данных REST API, доступных по адресу `http://localhost:3000`.
+```
+json-server info.json
+```
+
 ### Тестирование точек входа REST API
 GET/ 
 
