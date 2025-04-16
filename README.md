@@ -63,5 +63,30 @@ PATCH/
 ![image](https://github.com/user-attachments/assets/488110b7-f24d-4692-8e25-c6cb551e74ec)
 ![image](https://github.com/user-attachments/assets/8f76e259-21b1-42ce-90d7-546e00813148)
 
-
+Зависимости
+```
+"dependencies": {
+    "@vue/composition-api": "^1.7.2",
+    "axios": "^1.8.4",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@eslint/js": "^9.24.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-airbnb": "^8.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "globals": "^16.0.0",
+    "json-server": "^1.0.0-beta.3"
+  },
+```
 
