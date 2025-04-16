@@ -9,8 +9,10 @@
 
       </el-input>
 
-      <!--кнопка-->
+      <!--кнопка https://element-plus.org/en-US/component/button-->
       <el-button
+          type="success"
+          plain
           @click="addTask"
       >ADD</el-button>
     </div>

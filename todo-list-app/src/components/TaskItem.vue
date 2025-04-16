@@ -1,7 +1,7 @@
 <template>
   <div class="task-row">
     <div>
-      <el-checkbox></el-checkbox>
+      <el-checkbox class="task-checkbox"></el-checkbox>
       <span>{{ task.title }}</span> <!--повесить псевдокласс-->
     </div>
     <el-button
@@ -46,5 +46,10 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/deep/ .el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #ff3434;
+  border-color: #fd4c4c;
 }
 </style>
