@@ -20,6 +20,8 @@
         v-for="task in tasks"
         :key="task.id"
         :task="task"
+
+        @delete="deleteTask"
     />
   </div>
 </template>
@@ -66,6 +68,16 @@ export default {
       }
     };
 
+    // Удаление задачи
+    const deleteTask = async (id) => {
+      try{
+        await api.deleteTask(id);
+        tasks.value = tasks.value.filter((task) => task.id !== id);
+      } catch (error) {
+        console.error('Ошибка удаления', error);
+      }
+    };
+
     onMounted(() => {
       fetchTasks();
     });
@@ -75,6 +87,8 @@ export default {
 
       newTask, // чтобы можно было вводить
       addTask,
+
+      deleteTask,
     }
   }
 }

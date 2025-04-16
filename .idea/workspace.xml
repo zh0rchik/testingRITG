@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7cdebe9d-ded2-4e43-9864-445cc9f5022f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/Layout/Container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/components/Layout/Container.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-app/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/TaskItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/components/TaskItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/TaskList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/components/TaskList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/services/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,7 @@
       <workItem from="1744701581133" duration="10971000" />
       <workItem from="1744805303810" duration="2371000" />
       <workItem from="1744830372359" duration="1538000" />
-      <workItem from="1744832196832" duration="3554000" />
+      <workItem from="1744832196832" duration="5643000" />
     </task>
     <servers />
   </component>

@@ -16,4 +16,8 @@ export default {
     createTask(task) {
         return apiClient.post('/tasks', task);
     },
+
+    deleteTask(id) {
+        return apiClient.delete(`/tasks/${id}`);
+    }
 };

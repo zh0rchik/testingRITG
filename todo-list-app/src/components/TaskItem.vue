@@ -1,7 +1,18 @@
 <template>
-  <div>
-    {{ task.title }}
+  <div class="task-row">
+    <div>
+      <el-checkbox></el-checkbox>
+      <span>{{ task.title }}</span> <!--повесить псевдокласс-->
+    </div>
+    <el-button
+        type="text"
+        class="delete-btn"
+        @click="deleteTask"
+    >
+      <i class="el-icon-close"></i>
+    </el-button>
   </div>
+
 </template>
 
 <script>
@@ -14,12 +25,26 @@ export default {
     },
   },
 
-  setup() {
+  setup(props, {emit}) {
+    const deleteTask = () => {
+      // call-back функция
+      emit('delete', props.task.id);
+    };
 
+    return {
+      deleteTask,
+    }
   }
 }
 </script>
 
 <style scoped>
-
+.delete-btn {
+  color: #ff0000;
+}
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 </style>
