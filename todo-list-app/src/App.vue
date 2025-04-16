@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <h1>Привет, мир!</h1>
-  </div>
+  <task-list />
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api';
+import TaskList from './components/TaskList.vue';
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
-
+    TaskList,
   }
-}
+});
 </script>
 
 <style>
