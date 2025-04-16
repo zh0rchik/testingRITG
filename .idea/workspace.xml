@@ -6,19 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7cdebe9d-ded2-4e43-9864-445cc9f5022f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
