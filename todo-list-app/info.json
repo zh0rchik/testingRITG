@@ -1,18 +1,23 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "task1",
       "completed": true
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "task2",
       "completed": true
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "task 3",
+      "completed": false
+    },
+    {
+      "id": "5c24",
+      "title": "выучить vue",
       "completed": false
     }
   ]

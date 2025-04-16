@@ -1,5 +1,21 @@
 <template>
   <div class="tasks">
+    <div class="task-input">
+      <!--поле ввода-->
+      <el-input
+          v-model="newTask"
+          placeholder="Task"
+      >
+
+      </el-input>
+
+      <!--кнопка-->
+      <el-button
+          @click="addTask"
+      >ADD</el-button>
+    </div>
+
+    <!--отображение списка-->
     <task-item
         v-for="task in tasks"
         :key="task.id"
@@ -20,7 +36,9 @@ export default {
   },
   setup() {
     const tasks = ref([]);
+    const newTask = ref('');
 
+    // Загрузка задач
     const fetchTasks = async () => {
       try{
         const response = await api.getTasks();
@@ -30,17 +48,41 @@ export default {
       }
     };
 
+    // Добавление задач
+    const addTask = async () => {
+      if (newTask.value.trim()){ // обрезает пробелы
+        try {
+          const task = {
+            title: newTask.value,
+            completed: false,
+          };
+
+          const response = await api.createTask(task);
+          tasks.value.push(response.data);
+          newTask.value = '';
+        } catch (error) {
+          console.error('Ошибка добавления: ',error);
+        }
+      }
+    };
+
     onMounted(() => {
       fetchTasks();
     });
 
     return {
       tasks,
+
+      newTask, // чтобы можно было вводить
+      addTask,
     }
   }
 }
 </script>
 
 <style scoped>
-
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
+}
 </style>
