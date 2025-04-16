@@ -9,14 +9,12 @@
       <change beforePath="$PROJECT_DIR$/todo-list-app/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/info.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/jsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/public/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/api/tasks.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/assets/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/HelloWorld.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/main.js" beforeDir="false" />
