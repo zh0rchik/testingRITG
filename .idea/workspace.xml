@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7cdebe9d-ded2-4e43-9864-445cc9f5022f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-app/src/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-list-app/src/api/task_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/api/tasks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744701579971</updated>
       <workItem from="1744701581133" duration="10971000" />
-      <workItem from="1744805303810" duration="1210000" />
+      <workItem from="1744805303810" duration="2371000" />
     </task>
     <servers />
   </component>
