@@ -31,3 +31,37 @@ element iu необходим для использования готовых �
 vue create todo-list-app
 cd todo-app
 ```
+
+[json-server](https://code.tutsplus.com/ru/fake-rest-api-up-and-running-using-json-server--cms-27871t)
+
+Чтобы начать работу с `json-server` потребуется его установить через Менеджер пакетов Node (npm).
+```
+npm install -g json-server
+```
+
+Запускаем сервер через командную строку, указывая созданный в корне файл `info.json` в качестве источника данных REST API, доступных по адресу `http://localhost:3000`.
+```
+json-server info.json
+```
+
+### Тестирование точек входа REST API
+GET/ 
+
+![image](https://github.com/user-attachments/assets/af5d5267-19e6-4098-9be1-76e7e0f61385)
+
+POST/
+
+![image](https://github.com/user-attachments/assets/e0a1fd79-4983-4ad9-854f-c059e4474d70)
+![image](https://github.com/user-attachments/assets/8a35f56f-42b6-4370-b226-cb9a7a6f3730)
+
+DELETE/
+
+![image](https://github.com/user-attachments/assets/b48a20fd-417b-4435-ae13-695089536f24)
+
+PATCH/
+
+![image](https://github.com/user-attachments/assets/488110b7-f24d-4692-8e25-c6cb551e74ec)
+![image](https://github.com/user-attachments/assets/8f76e259-21b1-42ce-90d7-546e00813148)
+
+
+
