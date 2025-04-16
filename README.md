@@ -90,3 +90,14 @@ PATCH/
   },
 ```
 
+Таблица установленных зависимсотей и зачем они:
+|Библиотка                |Назначение             |
+|-------------------------|-----------------------|
+|vue, @vue/composition-api|Фреймы                 |
+|axios                    |HTTP-запросы           |
+|element-ui               |UI                     |
+|@vue/cli-service         |Разработка и сборка    |
+|json-server              |mock-API               |
+|ESlist                   |правил стиля JavaScript|
+|airbnb                   |Чтобы ESLint понимал шаблоны .vue|
+
