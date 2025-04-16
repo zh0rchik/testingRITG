@@ -1,14 +1,18 @@
 <template>
-  <task-list />
+  <container>
+    <task-list />
+  </container>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api';
 import TaskList from './components/TaskList.vue';
+import Container from './components/Layout/Container.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
+    Container,
     TaskList,
   }
 });
