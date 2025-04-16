@@ -1,12 +1,12 @@
 <template>
   <div class="tasks">
     <div class="task-input">
-      <!--поле ввода-->
+      <!--поле ввода https://element-plus.org/en-US/component/input-->
       <el-input
           v-model="newTask"
           placeholder="Task"
       >
-
+        <template #prepend>Task</template>
       </el-input>
 
       <!--кнопка https://element-plus.org/en-US/component/button-->

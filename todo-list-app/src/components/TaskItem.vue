@@ -1,8 +1,12 @@
 <template>
   <div class="task-row">
     <div>
-      <el-checkbox class="task-checkbox"></el-checkbox>
-      <span>{{ task.title }}</span> <!--повесить псевдокласс-->
+      <el-checkbox
+          v-model="isCompleted"
+          class="task-checkbox"
+          @change="updateTaskStatus"
+      />
+      <span :class="{ 'completed': isCompleted }">{{ task.title }}</span> <!--повесить псевдокласс-->
     </div>
     <el-button
         type="text"
@@ -16,6 +20,9 @@
 </template>
 
 <script>
+import { ref, onMounted } from '@vue/composition-api';
+import api from '../services/api'
+
 export default {
   name: 'TaskItem',
   props: {
@@ -26,13 +33,40 @@ export default {
   },
 
   setup(props, {emit}) {
+    const isCompleted = ref(props.task.completed);
+
     const deleteTask = () => {
       // call-back функция
       emit('delete', props.task.id);
     };
 
+    const updateTaskStatus = () => {
+      // Обновляем локальное состояние и родителю говорим про обновление
+      emit('update', {
+        ...props.task,
+        completed: isCompleted.value,
+      });
+
+      try {
+        const updatedTask = {
+          ...props.task,
+          completed: isCompleted.value,
+        };
+
+        api.updateTask(updatedTask);
+      } catch (error) {
+        console.error('Ошибка обновления статуса задачи: ', error);
+      }
+    };
+
+    onMounted(() => {
+      isCompleted.value = props.task.completed;
+    });
+
     return {
       deleteTask,
+      isCompleted,
+      updateTaskStatus,
     }
   }
 }
