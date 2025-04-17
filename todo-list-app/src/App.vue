@@ -27,4 +27,9 @@ export default defineComponent({
   color: #2c3e50;
   margin-top: 60px;
 }
+
+* {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 14px;
+}
 </style>

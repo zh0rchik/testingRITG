@@ -24,6 +24,7 @@
         :task="task"
 
         @delete="deleteTask"
+        @update="updateTask"
     />
   </div>
 </template>
@@ -80,6 +81,18 @@ export default {
       }
     };
 
+    // Обновление задачи
+    const updateTask = async (updatedTask) => {
+      try{
+        await api.updateTask(updatedTask);
+        const response = await api.getTasks()
+        tasks.value = response.data;
+      } catch (error) {
+        console.error("Ошибка обновления задачи", error)
+      }
+    }
+
+    // хук
     onMounted(() => {
       fetchTasks();
     });
@@ -91,6 +104,8 @@ export default {
       addTask,
 
       deleteTask,
+
+      updateTask,
     }
   }
 }

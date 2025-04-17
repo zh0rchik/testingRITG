@@ -1,20 +1,50 @@
 <template>
-  <div class="task-row">
-    <div>
+  <div class="task-item">
+    <div v-if="!isEditing">
+      <div class="task-row">
+        <div class="task-content">
+          <el-checkbox
+              v-model="isCompleted"
+              @change="updateTaskStatus"
+          ></el-checkbox>
+          <span
+              style="margin-left: 20px"
+              :class="{ 'completed': isCompleted }"
+              @click="modeEdit"
+          >
+            {{ task.title }}
+          </span>
+        </div>
+        <el-button
+            type="text"
+            @click="deleteTask"
+            class="delete-btn"
+        >
+          <i class="el-icon-close"></i>
+        </el-button>
+      </div>
+    </div>
+    <div v-else class="edit-form">
       <el-checkbox
           v-model="isCompleted"
-          class="task-checkbox"
           @change="updateTaskStatus"
-      />
-      <span :class="{ 'completed': isCompleted }">{{ task.title }}</span> <!--повесить псевдокласс-->
+      ></el-checkbox>
+      <el-input
+          style="margin-left: 10px"
+          type="text"
+          v-model="editedTitle"
+          @blur="saveEdit"
+          ref="editInput"
+      ></el-input>
+
+      <el-button
+          type="text"
+          @click="deleteTask"
+          class="delete-btn"
+      >
+        <i class="el-icon-close"></i>
+      </el-button>
     </div>
-    <el-button
-        type="text"
-        class="delete-btn"
-        @click="deleteTask"
-    >
-      <i class="el-icon-close"></i>
-    </el-button>
   </div>
 
 </template>
@@ -33,7 +63,31 @@ export default {
   },
 
   setup(props, {emit}) {
+    const isEditing = ref(false);
+    const editedTitle = ref('');
+    const editInput = ref(null);
     const isCompleted = ref(props.task.completed);
+
+    const modeEdit = () => {
+      editedTitle.value = props.task.title;
+      isEditing.value = true;
+      // Фокусировка на поле ввода при переходе в режим редактирования
+      setTimeout(() => {
+        if (editInput.value) {
+          editInput.value.focus();
+        }
+      });
+    };
+
+    const saveEdit = () => {
+      if (editedTitle.value.trim()) {
+        emit('update', {
+          ...props.task,
+          title: editedTitle.value,
+        });
+      }
+      isEditing.value = false;
+    };
 
     const deleteTask = () => {
       // call-back функция
@@ -64,10 +118,15 @@ export default {
     });
 
     return {
-      deleteTask,
+      isEditing,
+      editedTitle,
       isCompleted,
+      editInput,
+      modeEdit,
+      saveEdit,
       updateTaskStatus,
-    }
+      deleteTask,
+    };
   }
 }
 </script>
@@ -85,5 +144,12 @@ export default {
 /deep/ .el-checkbox__input.is-checked .el-checkbox__inner {
   background-color: #ff3434;
   border-color: #fd4c4c;
+  align-items: center;
 }
+
+.edit-form {
+  display: flex;
+  align-items: center;
+}
+
 </style>

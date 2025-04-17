@@ -22,6 +22,6 @@ export default {
     },
 
     updateTask(task) {
-        return apiClient.put(`/tasks/${task.id}`, task);
+        return apiClient.patch(`/tasks/${task.id}`, task);
     }
 };
