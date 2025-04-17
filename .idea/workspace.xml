@@ -7,10 +7,8 @@
     <list default="true" id="7cdebe9d-ded2-4e43-9864-445cc9f5022f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/TaskItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/components/TaskItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/TaskList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/components/TaskList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/services/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,7 +5,8 @@
       <el-input
           v-model="newTask"
           placeholder="Task"
-      >
+          @keyup.enter.native="addTask"
+      > <!--повесил ентер-->
         <template #prepend>Task</template>
       </el-input>
 

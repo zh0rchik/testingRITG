@@ -35,7 +35,8 @@
           v-model="editedTitle"
           @blur="saveEdit"
           ref="editInput"
-      ></el-input>
+          @keyup.enter.native="saveEdit"
+      ></el-input> <!--повесил ентер-->
 
       <el-button
           type="text"
