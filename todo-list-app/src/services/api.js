@@ -23,5 +23,9 @@ export default {
 
     updateTask(task) {
         return apiClient.patch(`/tasks/${task.id}`, task);
+    },
+
+    register(username, password) {
+        return apiClient.post('/users', { username, password });
     }
 };

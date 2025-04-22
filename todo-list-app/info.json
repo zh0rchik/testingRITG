@@ -1,29 +1,8 @@
 {
+  "users": [
+
+  ],
   "tasks": [
-    {
-      "id": "1",
-      "title": "task15",
-      "completed": true
-    },
-    {
-      "id": "2",
-      "title": "task2",
-      "completed": true
-    },
-    {
-      "id": "2b4d",
-      "title": "task11",
-      "completed": false
-    },
-    {
-      "id": "514b",
-      "title": "task12",
-      "completed": true
-    },
-    {
-      "id": "0907",
-      "title": "task13",
-      "completed": false
-    }
+
   ]
 }
