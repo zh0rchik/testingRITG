@@ -25,7 +25,12 @@ export default {
         return apiClient.patch(`/tasks/${task.id}`, task);
     },
 
+    // Новые api для учеток
     register(username, password) {
         return apiClient.post('/users', { username, password });
+    },
+
+    login(username, password) {
+        return apiClient.get(`/users?username=${username}&password=${password}`);
     }
 };
