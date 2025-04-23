@@ -3,7 +3,7 @@
 const AUTH_KEY = 'user';
 
 export default {
-    // сохрание в LS
+    // сохрание в LS.
     saveUser(user) {
         localStorage.setItem(AUTH_KEY, JSON.stringify({
             id: user.id,
