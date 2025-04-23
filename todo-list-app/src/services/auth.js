@@ -24,6 +24,7 @@ export default {
 
     // проверка наличия
     isAuthenticated() {
+        console.log(!!this.getUser());
         return !!this.getUser(); // быстро превратить в булево
     }
 }
