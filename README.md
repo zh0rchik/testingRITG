@@ -101,3 +101,10 @@ PATCH/
 |ESlist                   |правил стиля JavaScript|
 |airbnb                   |Чтобы ESLint понимал шаблоны .vue|
 
+
+Неавторизованное и авторизованное состояние
+![image](https://github.com/user-attachments/assets/226f5a5a-25fd-458e-83ba-690193dd697f)
+![image](https://github.com/user-attachments/assets/0e741b05-06fa-4889-b287-472066f2e710)
+
+
+
