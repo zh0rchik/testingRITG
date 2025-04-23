@@ -5,7 +5,7 @@
         <h2>To-Do List</h2>
         <div class="user-info">
           <span>{{ username }}</span>
-          <!--<el-button type="text">Выйти</el-button>-->
+          <el-button type="text" @click="logout">Выйти</el-button>
         </div>
       </div>
     </el-header>
@@ -41,6 +41,11 @@ export default defineComponent({
       }
     };
 
+    const logout = () => {
+      auth.removeUser();
+      checkAuth();
+    };
+
     onMounted(() => {
       checkAuth();
 
@@ -48,7 +53,8 @@ export default defineComponent({
 
     return {
       isAuthenticated,
-      username
+      username,
+      logout
     };
   }
 });
@@ -67,5 +73,24 @@ export default defineComponent({
 * {
   font-family: 'Arial', 'Helvetica', sans-serif;
   font-size: 14px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 </style>
