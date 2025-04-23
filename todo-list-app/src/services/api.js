@@ -31,6 +31,7 @@ export default {
     },
 
     login(username, password) {
+        console.log(apiClient.get(`/users?username=${username}&password=${password}`));
         return apiClient.get(`/users?username=${username}&password=${password}`);
     }
 };

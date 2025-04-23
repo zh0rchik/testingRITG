@@ -10,15 +10,15 @@
       </div>
     </el-header>
 
-    <container v-if="isAuthenticated">
-      <task-list />
+    <container>
+      <router-view />
     </container>
   </div>
 </template>
 
 <script>
 import { defineComponent, ref, onMounted } from '@vue/composition-api';
-import TaskList from './components/TaskList.vue';
+//import TaskList from './components/TaskList.vue';
 import Container from './components/Layout/Container.vue';
 import auth from "@/services/auth";
 
@@ -26,10 +26,9 @@ export default defineComponent({
   name: 'App',
   components: {
     Container,
-    TaskList,
   },
 
-  setup() {
+  setup(props, {root}) {
     const isAuthenticated = ref(false);
     const username = ref('');
 
@@ -44,11 +43,14 @@ export default defineComponent({
     const logout = () => {
       auth.removeUser();
       checkAuth();
+      root.$router.push('/login');
     };
 
     onMounted(() => {
       checkAuth();
-
+      if (!isAuthenticated.value && root.$route.path !== '/register') {
+        root.$router.push('/login');
+      }
     });
 
     return {
