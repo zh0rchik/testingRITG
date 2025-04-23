@@ -62,6 +62,7 @@ export default {
         if (response.data && response.data.length > 0) {
           auth.saveUser(response.data[0]);
           root.$router.push('/tasks');
+          window.location.reload();
         } else {
           error.value = 'Неверный логин или пароль';
         }
