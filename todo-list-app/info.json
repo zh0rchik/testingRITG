@@ -9,6 +9,16 @@
       "id": "836f",
       "username": "admin",
       "password": "admin"
+    },
+    {
+      "id": "9991",
+      "username": "task",
+      "password": "task"
+    },
+    {
+      "id": "2c7f",
+      "username": "qwerty",
+      "password": "qwerty"
     }
   ],
   "tasks": [

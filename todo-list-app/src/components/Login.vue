@@ -24,6 +24,11 @@
       </el-form-item>
     </el-form>
 
+
+    <div class="register-link">
+      <p><router-link to="/register">Зарегистрироваться</router-link></p>
+    </div>
+
     <el-alert
         v-if="error"
         :title="error"

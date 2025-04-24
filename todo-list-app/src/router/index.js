@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Login from '../components/Login.vue';
 import TaskList from '../components/TaskList.vue';
 import auth from '../services/auth';
+import Register from '../components/Register.vue';
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,12 @@ const routes = [
         name: 'Tasks',
         component: TaskList,
         meta: { requiresAuth: true },
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: Register,
+        meta: { requiresAuth: false },
     },
 ];
 

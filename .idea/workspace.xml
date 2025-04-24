@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cdebe9d-ded2-4e43-9864-445cc9f5022f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/todo-list-app/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo-list-app/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-list-app/src/services/api.js" afterDir="false" />
-    </list>
+    <list default="true" id="7cdebe9d-ded2-4e43-9864-445cc9f5022f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +72,7 @@
       <workItem from="1744882555149" duration="2164000" />
       <workItem from="1745175132989" duration="271000" />
       <workItem from="1745217007177" duration="932000" />
-      <workItem from="1745446212761" duration="203000" />
+      <workItem from="1745446405141" duration="3644000" />
     </task>
     <servers />
   </component>
