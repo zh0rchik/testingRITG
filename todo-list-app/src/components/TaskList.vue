@@ -34,6 +34,7 @@
 import { ref, onMounted } from '@vue/composition-api';
 import TaskItem from '../components/TaskItem.vue';
 import api from '../services/api';
+import auth from "@/services/auth";
 
 export default {
   name: 'TaskList',
@@ -43,11 +44,12 @@ export default {
   setup() {
     const tasks = ref([]);
     const newTask = ref('');
+    const user = auth.getUser();
 
     // Загрузка задач
     const fetchTasks = async () => {
       try{
-        const response = await api.getTasks();
+        const response = await api.getTasks(user.id);
         tasks.value = response.data;
       } catch (error) {
         console.error(error);
@@ -56,11 +58,12 @@ export default {
 
     // Добавление задач
     const addTask = async () => {
-      if (newTask.value.trim()){ // обрезает пробелы
+      if (newTask.value.trim() && user){ // обрезает пробелы
         try {
           const task = {
             title: newTask.value,
             completed: false,
+            userId: user.id, // новое поле
           };
 
           const response = await api.createTask(task);
